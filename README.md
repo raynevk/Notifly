@@ -1,0 +1,2 @@
+# Notifly
+Simple Notice Board
