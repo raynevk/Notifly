@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Main Page -->
+    <div id="mainPage" class="main-page">
+        <button class="nav-button" onclick="goToMemoPage()">Go to Memo</button>
+        
+        <div class="container">
+            <div class="main-content">
+                <h1 class="title">Memo App</h1>
+                <p class="subtitle">Organize your thoughts with colorful memos</p>
+                <button class="add-memo-btn" onclick="addMemo()">Add Memo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memo Page -->
+    <div id="memoPage" class="memo-page">
+        <div class="memo-header">
+            <h2 class="memo-title">My Memos</h2>
+            <button class="return-btn" onclick="returnToMain()">Return to Main</button>
+        </div>
+        
+        <div class="memo-grid" id="memoGrid">
+            <!-- Memos will be added here -->
+        </div>
+        
+        <div id="emptyState" class="empty-state">
+            <p>No memos yet. Go back to main page and click "Add Memo" to create one!</p>
+        </div>
+    </div>
+</body>
+</html>
